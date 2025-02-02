@@ -17,18 +17,28 @@
         background: #eee;
       }
       .form-control {  
-        width: 640px;
+        /* width: 640px;
         height: fit-content;
-        object-fit: contain;
+        object-fit: contain; */
         background-image: url("./images/logo_google.png");
         background-repeat: no-repeat;
-        background-position: center center;
+        background-position: 1cm left center;
       } 
       /* .form-control {
         background-image: url("./images/logo_facebook.png");
         background-repeat : no-repeat;
         background-position: center center;
       } */
+       .form-label1 {
+        background-image: url("./images/id_people.png");  
+        background-repeat : no-repeat;
+        background-position : center;              
+       }
+       .form-label2 {
+        background-image: url("./images/pw_key.png");  
+        background-repeat : no-repeat;
+        background-position : center;              
+       }
     </style>
   </head>
   <body>
@@ -40,7 +50,7 @@
     <div class="container">  
       <div class="row">
         <div class="col" style="text-align: center;">
-          <img src="./images/login_logo.png" class="rounded" width="120" height="100" alt="...">
+          <img src="./images/login_logo.png" class="rounded" width="150" height="120" alt="...">
           <p type="text" style="font-size: xx-large; text-align: center; font-weight: bold; height: 15%;">Sign In</p>
           <p type="text" style="font-size: large; text-align: center; font-weight: bold; color: gray;">Get access to your account</p>
         </div>
@@ -64,21 +74,21 @@
       <br>
 
       <div class="divider d-grid gap-1 col-md-6 offset-md-3" style="display: flex !important; align-items: center !important;">
-        <p class="test" style="text-align: center !important; font-weight: 700 !important; color: gray;">or use email</p>
+        <p class="test" style="text-align: center; font-style: normal; font-weight: 700;border-color: black;">or use email</p>
       </div>
 
       <div class="row">
         <div class="col-md-6 offset-md-3">
-          <label for="inputid" class="form-label" style="font-weight: bold; height: 0.2cm;">&nbsp;&nbsp;&nbsp;&nbsp;ID</label>
-          <input type="text" class="form-control" id="inputAddress1" style="height: 1.2cm; color: gray; font-weight: bold;" placeholder="&nbsp;&nbsp;name@example.com">
+          <label for="inputid" class="form-label1" style="font-weight: bold; height: 0.2cm;">&nbsp;&nbsp;&nbsp;&nbsp;ID</label>
+          <input type="text" class="form-control" id="inputAddress1" style="height: 1.2cm; color: lightgrey; font-weight: bold;" placeholder="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name@example.com">
         </div>
       </div>
       <br>
 
       <div class="row">
         <div class="col-md-6 offset-md-3">
-          <label for="inputpassword" class="form-label" style="font-weight: bold; height: 0.2cm;">&nbsp;&nbsp;&nbsp;&nbsp;PASSWORD</label>
-          <input type="text" class="form-control" id="inputAddress2" style="height: 1.2cm; color: gray; font-weight: bold;" placeholder="&nbsp;&nbsp;Password">
+          <label for="inputpassword" class="form-label2" style="font-weight: bold; height: 0.2cm;">&nbsp;&nbsp;&nbsp;&nbsp;PASSWORD</label>
+          <input type="text" class="form-control" id="inputAddress2" style="height: 1.2cm; color: lightgrey; position: relative; font-weight: bold;" placeholder="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Password">
         </div>
       </div>
 
