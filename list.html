@@ -3,174 +3,212 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Admin-Code</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <style type="text/css">
-        ul{list-style-type: none}
-        .sidebar_menu {
-            border-image: fill;
-            font-size: large;
-            color: dimgrey;
-            font-weight: bold;
+    <title><Admin-Info></title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        /**************************************
+        STATIC LAYOUT CSS
+        **************************************/
+
+        .wrapper {
+        width: 100%;
+        margin: 0 auto;
         }
+
+        header {
+            width: 100%;
+        }
+
+        nav, section {
+        float: left;
+        }
+
+        nav {
+            width: 200px;
+            margin-right: 10px;
+        }
+
+        section {
+            width: 1260px;
+        }
+
+
+
+        /**************************************
+        CSS TO MAKE THE EXAMPLE LOOK PRETTY
+        **************************************/
+
+        *, *:before, *:after {
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        }
+
+        body {
+        
+        color: #000;
+        font-family: Helvetica;
+        text-align: center;
+        margin: 0;
+        }
+
+        header,
+        nav,
+        section {
+            border: 1px solid #ccc;
+            margin-bottom: 10px;
+            border-radius: 3px;
+        }
+
+        header {
+            padding: 20px 0;
+        }
+
+        nav, section {
+            /*padding: 200px 0;*/
+        }
+        ul{list-style-type: none}
     </style>
+    
 </head>
 <body>
-    <div id="navmenu" class="container-fluid">
-        <div class="row">
-            <div class="col">
-                <p type="text" style="color: darkgray; font-weight: bold; font-size: xx-large;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Admin</p>
-                <img src="image/form_상단 우측.PNG">
-            </div>
-        </div>        
-    </div>
-    <div id="sidebar" class="container_sidebar">
-        <div class="row">
-            <ul class="d-grid gap-1 col-md-2">
-                <li class="sidebar_home">&nbsp;&nbsp;<img src="images/form_home.PNG"/>&nbsp;Home</li>
-                <li class="sidebar_notice">&nbsp;&nbsp;<img src="images/form_notice.PNG"/>&nbsp;공지사항</li>
-                <li class="sidebar_"><img src="images/form_liststyle.PNG"><img src="images/form_membership.PNG"/>&nbsp;회원관리</li>
-                    <a class="nav_link" href="#"></a>
-                <li class="sidebar_"><img src="images/form_liststyle.PNG"><img src="images/form_servicemanagement.PNG"/>&nbsp;서비스관리</li>
-                    <a class="nav_link" href="#"></a>
-                <li class="sidebar_"><img src="images/form_liststyle.PNG"><img src="images/form_communication.PNG"/>&nbsp;커뮤니케이션</li>
-                    <a class="nav_link" href="#"></a>
-                <li class="sidebar_"><img src="images/form_liststyle.PNG"><img src="images/form_systemmanagement.PNG"/>&nbsp;시스템관리</li>
-                    <a class="nav_link" href="#"></a>
-                    <ul>
-                        <li>&nbsp;&nbsp;&nbsp;&nbsp;코드관리</li>
-                            <a class="nav_link" href="#"></a>
-                        <li>&nbsp;&nbsp;&nbsp;&nbsp;코드그룹관리</li>
-                            <a class="nav_link" href="#"></a>
-                    </ul>
-                <li class="sidebar_">&nbsp;&nbsp;<img src="images/form_info.PNG"/>&nbsp;개인정보관리</li>
-                <li class="sidebar_"><img src="images/form_liststyle.PNG"><img src="images/form_test.PNG"/>&nbsp;test</li>
-                    <a class="nav_link" href="#"></a>            
-            </ul>
-
-        <div class="d-grid gap-1 col-md-10">
-            <img src="./images/list.pages.PNG.jpg">
-            <br><h4>CODE</h4>
-            <div class="col-3">
-                <label for="container_CODE1" style="font-weight: bold; height: 0.8cm;">코드그룹<span style="color: red;">*</span></label>
-                <select class="form-select" aria-label="Default select example">
-                    <option selected style="font-weight: bold;">선택하세요</option>
-                    <option value="1">option 1</option>
-                    <option value="2">option 2</option>
-                    <option value="3">option 3</option>
-                </select>
-            </div>
-            <br>
-
-        <div class="row">
-            <div class="col-md-3">
-                <label for="container_use" style="font-weight: bold; height: 0.8cm;">사용여부<span style="color: red;">*</span></label>
-                <select class="form-select" aria-label="Default select example">
-                    <option selected style="font-weight: bold;">사용</option>
-                    <option value="1">사용 1</option>
-                    <option value="2">사용 2</option>
-                    <option value="3">사용 3</option>
-                    </select>   
-            </div>
-            <div class="col-md-3">
-                <label for="container_use" style="font-weight: bold; height: 0.8cm;">순서<span style="color: red;">*</span></label> 
-                <input type="text" style="font-weight: bold;">
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col">
-                <label for="container_CODE1" style="font-weight: bold; height: 0.8cm;">설명</label>
-                <input type="text" style="font-weight: bold;">
-            </div>
-        </div>  
-
-        <div class="row">
-            <div class="col-md-3">
-                <label for="container_CODE1" style="font-weight: bold; height: 0.8cm;">다국어 1</label>
-                <input type="text" style="font-weight: bold;">
-            </div>
-            <div class="col-md-3">
-                <label for="container_CODE2" style="font-weight: bold; height: 0.8cm;">다국어 2</label>
-                <input type="text" style="font-weight: bold;">
-            </div>
-            <div class="col-md-3">
-                <label for="container_CODE3" style="font-weight: bold; height: 0.8cm;">다국어 3</label>
-                <input type="text" style="font-weight: bold;">
-            </div>
-            <div class="col-md-3">
-                <label for="container_CODE4" style="font-weight: bold; height: 0.8cm;">다국어 4</label>
-                <input type="text" style="font-weight: bold;">
-            </div>  
-
-        <div class="row">
-            <div class="col-md-3">
-                <label for="container_CODE1" style="font-weight: bold; height: 0.8cm;">다국어 5</label>
-                <input type="text" style="font-weight: bold;">
-            </div>
-            <div class="col-md-3">
-                <label for="container_CODE2" style="font-weight: bold; height: 0.8cm;">다국어 6</label>
-                <input type="text" style="font-weight: bold;">
-            </div>
-            <div class="col-md-3">
-                <label for="container_CODE3" style="font-weight: bold; height: 0.8cm;">다국어 7</label>
-                <input type="text" style="font-weight: bold;">
-            </div>
-            <div class="col-md-3">
-                <label for="container_CODE4" style="font-weight: bold; height: 0.8cm;">다국어 8</label>
-                <input type="text" style="font-weight: bold;">
+    <div class="wrapper">
+        <header >
+            <div class="row">
+                <div class="col col-md-6" style="float: left; ">
+                    <p type="text" style="color: darkgray;  font-size: xx-large; width: 40%;">Admin</p>                   
+                </div>
+                <div class="col col-md-6" style="float: right; text-align: right; padding-right: 20px;">
+                    <img src="images/form_상단 우측.PNG">
+                </div>
             </div> 
-
-        <div class="row">
-            <div class="col-md-3">
-                <label for="container_CODE1" style="font-weight: bold; height: 0.8cm;">예비 1(VARCHAR TYPE)</label>
-                <input type="text" style="font-weight: bold;">
-            </div>
-            <div class="col-md-3">
-                <label for="container_CODE2" style="font-weight: bold; height: 0.8cm;">예비 2(VARCHAR TYPE)</label>
-                <input type="text" style="font-weight: bold;">
-            </div>
-            <div class="col-md-3">
-                <label for="container_CODE3" style="font-weight: bold; height: 0.8cm;">예비 3(VARCHAR TYPE)</label>
-                <input type="text" style="font-weight: bold;">
-            </div>
-            <div class="col-md-3">
-                <label for="container_CODE4" style="font-weight: bold height: 0.8cm;;">예비 4(VARCHAR TYPE)</label>
-                <input type="text" style="font-weight: bold;">
-            </div>    
-            
-        <div class="row">
-            <div class="col-md-3">
-                <label for="container_CODE1" style="font-weight: bold; height: 0.8cm;">예비 1(INT TYPE)</label>
-                <input type="text" style="font-weight: bold;">
-            </div>
-            <div class="col-md-3">
-                <label for="container_CODE2" style="font-weight: bold; height: 0.8cm;">예비 2(INT TYPE)</label>
-                <input type="text" style="font-weight: bold;">
-            </div>
-            <div class="col-md-3">
-                <label for="container_CODE3" style="font-weight: bold; height: 0.8cm;">예비 3(INT TYPE)</label>
-                <input type="text" style="font-weight: bold;">
-            </div>
-            <div class="col-md-3">
-                <label for="container_CODE4" style="font-weight: bold; height: 0.8cm;">예비 4(INT TYPE)</label>
-                <input type="text" style="font-weight: bold;">
-            </div>  
-        </div>           
-
-        <div class="row">
-            <div class="col">
-                <img src="./images/form-info1.png" class="rounded float-start" alt="...">
-                <img src="./images/form_info2.PNG" class="rounded float-end" alt="...">
-            </div>
+        </header>
+        <div style="height: auto; padding: 0px 20px;">
+            <nav style="text-align: left;">
+                <div class="row">
+                    <ul class="d-grid gap-1">
+                        <li class="sidebar_home">&nbsp;&nbsp;<img src="images/form_home.PNG"/>&nbsp;Home</li>
+                        <li class="sidebar_notice">&nbsp;&nbsp;<img src="images/form_notice.PNG"/>&nbsp;공지사항</li>
+                        <li class="sidebar_"><img src="images/form_liststyle.PNG"><img src="images/form_membership.PNG"/>&nbsp;회원관리</li>
+                            <a class="nav_link" href="#"></a>
+                        <li class="sidebar_"><img src="images/form_liststyle.PNG"><img src="images/form_servicemanagement.PNG"/>&nbsp;서비스관리</li>
+                            <a class="nav_link" href="#"></a>
+                        <li class="sidebar_"><img src="images/form_liststyle.PNG"><img src="images/form_communication.PNG"/>&nbsp;커뮤니케이션</li>
+                            <a class="nav_link" href="#"></a>
+                        <li class="sidebar_"><img src="images/form_liststyle.PNG"><img src="images/form_systemmanagement.PNG"/>&nbsp;시스템관리</li>
+                            <a class="nav_link" href="#"></a>
+                            <ul>
+                                <li>&nbsp;&nbsp;&nbsp;&nbsp;코드관리</li>
+                                    <a class="nav_link" href="#"></a>
+                                <li>&nbsp;&nbsp;&nbsp;&nbsp;코드그룹관리</li>
+                                    <a class="nav_link" href="#"></a>
+                            </ul>
+                        <li class="sidebar_">&nbsp;&nbsp;<img src="images/form_info.PNG"/>&nbsp;개인정보관리</li>
+                        <li class="sidebar_"><img src="images/form_liststyle.PNG"><img src="images/form_test.PNG"/>&nbsp;test</li>
+                            <a class="nav_link" href="#"></a>            
+                    </ul>
+                </div>
+            </nav>
+            <section style="border: solid 1px #ccc;">
+                <form>
+                    <div class="" style="padding-left: 20px; padding-top: 20px; height: 60px; text-align: left; border-bottom: solid 1px #ccc;">
+                        <h4>기본정보</h4>
+                    </div>
+                    <div class="row" style="padding: 0 5px;">
+                        <div class="col-3">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">코드그룹<span style="color: red;">*</span></label>
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected style="width: 100%; ">선택하세요</option>
+                                    <option value="1">option 1</option>
+                                    <option value="2">option 2</option>
+                                    <option value="3">option 3</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" style="padding: 10px 5px;">
+                        <div class="col-3">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">코드<span style="color: red;">*</span></label>
+                                <input type="text" style="width: 100%; " placeholder="&nbsp;&nbsp;자동생성" disabled>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">코드(ANOTHER)</label>
+                                <input type="text" style="width: 100%; " placeholder="&nbsp;&nbsp;영대소문자,숫자">
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">코드이름<span style="color: red;">*</span></label>
+                                <input type="text" style="width: 100%; " placeholder="&nbsp;&nbsp;한글,영대소문자,숫자">
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">코드이름(영문)</label>
+                                <input type="text" style="width: 100%; " placeholder="&nbsp;&nbsp;영대소문자,숫자">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" style="padding: 10px 5px;">
+                        <div class="col-3">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">사용여부<span style="color: red;">*</span></label>
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected style="width: 100%; ">선택하세요</option>
+                                    <option value="1">option 1</option>
+                                    <option value="2">option 2</option>
+                                    <option value="3">option 3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">순서</label>
+                                <input type="text" style="width: 100%; " placeholder="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" style="padding: 10px 5px;">
+                        <div class="col-6">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">설명<span style="color: red;">*</span></label>
+                                <textarea style="width: 100%;"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" style="padding: 10px 5px;">
+                        <div class="col-3">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">다국어1</label>
+                                <input type="text" style="width: 100%; " placeholder="">
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">다국어2</label>
+                                <input type="text" style="width: 100%; " placeholder="">
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">다국어3<span style="color: red;">*</span></label>
+                                <input type="text" style="width: 100%; " placeholder="">
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">다국어4</label>
+                                <input type="text" style="width: 100%; " placeholder="">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </section>
         </div>
     </div>
-</div>
-
-
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
