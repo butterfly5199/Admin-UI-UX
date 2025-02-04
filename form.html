@@ -38,15 +38,15 @@
         CSS TO MAKE THE EXAMPLE LOOK PRETTY
         **************************************/
 
-        /* *, *:before, *:after {
+        *, *:before, *:after {
         -moz-box-sizing: border-box;
         -webkit-box-sizing: border-box;
         box-sizing: border-box;
-        } */
+        }
 
         body {
-        /* box-sizing: border-box; */
-        color: #000;
+        box-sizing: border-box;
+        color: dimgrey;
         font-family: Helvetica;
         text-align: left;
         margin: 0;
@@ -77,7 +77,7 @@
         <header >
             <div class="row">
                 <div class="col col-md-6" style="float: left; ">
-                    <p type="text" style="color: darkgray;  font-size: xx-large; width: 30%;">Admin</p>                   
+                    <p type="text" style="color: dimgrey;  font-size: xx-large; width: 30%;">Admin</p>                   
                 </div>
                 <div class="col col-md-6" style="float: right; text-align: right; padding-right: 20px;">
                     <img src="images/form_상단 우측.PNG">
@@ -113,8 +113,8 @@
             <div id="main" class="container">
             <section style="border: solid 1px #ccc;">
                 <form>
-                    <article class="h-10" style="padding-left: 20px; padding-top: 20px; height: 60px; text-align: left; border-bottom: solid 1px #ccc; border-color: darkgray;">
-                        <h4 style="font-weight: bold;">기본정보</h4>
+                    <article class="h-10" style="padding-left: 20px; padding-top: 20px; height: 60px; text-align: left; border-bottom: solid 1px #ccc; border-color: lightgrey;">
+                        <h4 style="font-weight: bold; color: black;">기본정보</h4>
                     </article>
 
                     <article class="row h-90" style="padding: 0 5px;">
@@ -134,32 +134,32 @@
                         <div class="col-3">
                             <div class="form-group">
                                 <label for="exampleInputEmail1">코드<span style="color: red;">*</span></label>
-                                <input type="text" style="width: 100%; height: 1cm;" placeholder="&nbsp;&nbsp;자동생성" disabled>
+                                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="&nbsp;&nbsp;자동생성" disabled>
                             </div>
                         </div>
                         <div class="col-3">
                             <div class="form-group">
                                 <label for="exampleInputEmail1">코드(ANOTHER)</label>
-                                <input type="text" style="width: 100%; height: 1cm;" placeholder="&nbsp;&nbsp;영대소문자,숫자">
+                                <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="&nbsp;&nbsp;영대소문자,숫자">
                             </div>
                         </div>
                         <div class="col-3">
                             <div class="form-group">
                                 <label for="exampleInputEmail1">코드이름<span style="color: red;">*</span></label>
-                                <input type="text" style="width: 100%; height: 1cm;" placeholder="&nbsp;&nbsp;한글,영대소문자,숫자">
+                                <input type="text" class="form-control" id="exampleFormControlInput3" placeholder="&nbsp;&nbsp;한글,영대소문자,숫자">
                             </div>
                         </div>
                         <div class="col-3">
                             <div class="form-group">
                                 <label for="exampleInputEmail1">코드이름(영문)</label>
-                                <input type="text" style="width: 100%; height: 1cm;" placeholder="&nbsp;&nbsp;영대소문자,숫자">
+                                <input type="text" class="form-control" id="exampleFormControlInput4" placeholder="&nbsp;&nbsp;영대소문자,숫자">
                             </div>
                         </div>
                     </div>
                     <div class="row" style="padding: 10px 5px;">
                         <div class="col-3">
                             <div class="form-group">
-                                <label for="exampleInputEmail1">사용여부<span style="color: red;">*</span></label>
+                                <label for="codeLanguage1">사용여부<span style="color: red;">*</span></label>
                                 <select class="form-select" aria-label="Default select example">
                                     <option selected style="width: 100%; font-weight: bold;">사용</option>
                                     <option value="1">option 1</option>
@@ -170,128 +170,129 @@
                         </div>
                         <div class="col-3">
                             <div class="form-group">
-                                <label for="exampleInputEmail1">순서</label>
-                                <input type="text" style="width: 100%; height: 1cm;" placeholder="">
+                                <label for="codeLanguage1">순서</label>
+                                <input type="text" class="form-control" id="codeLanguageuse1" placeholder="">
                             </div>
                         </div>
                     </div>
                     <div class="row" style="padding: 10px 5px;">
                         <div class="col-6">
                             <div class="form-group">
-                                <label for="exampleInputEmail1">설명<span style="color: red;">*</span></label>
-                                <textarea style="width: 100%;"></textarea>
+                                <label for="codeLanguage1">설명<span style="color: red;">*</span></label>
+                                <textarea class="form-control" id="codeLanguageuse2" rows="3"></textarea>
                             </div>
                         </div>
                     </div>
                     <div class="row" style="padding: 10px 5px;">
                         <div class="col-3">
                             <div class="form-group">
-                                <label for="exampleInputEmail1">다국어1</label>
-                                <input type="text" style="width: 100%; height: 1cm;" placeholder="">
+                                <label for="codeLanguage1">다국어1</label>
+                                <input type="text" class="form-control" id="codeLanguageInput1" placeholder="">
                             </div>
                         </div>
                         <div class="col-3">
                             <div class="form-group">
-                                <label for="exampleInputEmail1">다국어2</label>
-                                <input type="text" style="width: 100%; height: 1cm;" placeholder="">
+                                <label for="codeLanguage1">다국어2</label>
+                                <input type="text" class="form-control" id="codeLanguageuse1" placeholder="">
                             </div>
                         </div>
                         <div class="col-3">
                             <div class="form-group">
-                                <label for="exampleInputEmail1">다국어3</label>
-                                <input type="text" style="width: 100%; height: 1cm;" placeholder="">
+                                <label for="codeLanguage1">다국어3</label>
+                                <input type="text" class="form-control" id="codeLanguageuse1" placeholder="">
                             </div>
                         </div>
                         <div class="col-3">
                             <div class="form-group">
-                                <label for="exampleInputEmail1">다국어4</label>
-                                <input type="text" style="width: 100%; height: 1cm;" placeholder="">
+                                <label for="codeLanguage1">다국어4</label>
+                                <input type="text" class="form-control" id="codeLanguageuse1" placeholder="">
                             </div>
                         </div>
                     </div>    
                     <div class="row" style="padding: 10px 5px;">
                         <div class="col-3">
                             <div class="form-group">
-                                <label for="exampleInputEmail1">다국어5</label>
-                                <input type="text" style="width: 100%; height: 1cm;" placeholder="">
+                                <label for="codeLanguage1">다국어5</label>
+                                <input type="text" class="form-control" id="codeLanguageuse1" placeholder="">
                             </div>
                         </div>
                         <div class="col-3">
                             <div class="form-group">
-                                <label for="exampleInputEmail1">다국어6</label>
-                                <input type="text" style="width: 100%; height: 1cm;" placeholder="">
+                                <label for="codeLanguage1">다국어6</label>
+                                <input type="text" class="form-control" id="codeLanguageuse1" placeholder="">
                             </div>
                         </div>
                         <div class="col-3">
                             <div class="form-group">
-                                <label for="exampleInputEmail1">다국어7</label>
-                                <input type="text" style="width: 100%; height: 1cm;" placeholder="">
+                                <label for="codeLanguage1">다국어7</label>
+                                <input type="text" class="form-control" id="codeLanguageuse1" placeholder="">
                             </div>
                         </div>
                         <div class="col-3">
                             <div class="form-group">
-                                <label for="exampleInputEmail1">다국어8</label>
-                                <input type="text" style="width: 100%; height: 1cm;" placeholder="">
+                                <label for="codeLanguage1">다국어8</label>
+                                <input type="text" class="form-control" id="codeLanguageuse1" placeholder="">
                             </div>
                         </div>
                     </div>
                     <div class="row" style="padding: 10px 5px;">
                         <div class="col-3">
                             <div class="form-group">
-                                <label for="exampleInputEmail1">예비 1(VARCHAR TYPE)</label>
-                                <input type="text" style="width: 100%; height: 1cm;" placeholder="">
+                                <label for="codeLanguage1">예비 1(VARCHAR TYPE)</label>
+                                <input type="text" class="form-control" id="codeLanguageuse1" placeholder="">
                             </div>
                         </div>
                         <div class="col-3">
                             <div class="form-group">
-                                <label for="exampleInputEmail1">예비 2(VARCHAR TYPE)</label>
-                                <input type="text" style="width: 100%; height: 1cm;" placeholder="">
+                                <label for="codeLanguage1">예비 2(VARCHAR TYPE)</label>
+                                <input type="text" class="form-control" id="codeLanguageuse1" placeholder="">
                             </div>
                         </div>
                         <div class="col-3">
                             <div class="form-group">
-                                <label for="exampleInputEmail1">예비 3(VARCHAR TYPE)</label>
-                                <input type="text" style="width: 100%; height: 1cm;" placeholder="">
+                                <label for="codeLanguage1">예비 3(VARCHAR TYPE)</label>
+                                <input type="text" class="form-control" id="codeLanguageuse1" placeholder="">
                             </div>
                         </div>
                         <div class="col-3">
                             <div class="form-group">
-                                <label for="exampleInputEmail1">예비 4(VARCHAR TYPE)</label>
-                                <input type="text" style="width: 100%; height: 1cm;" placeholder="">
+                                <label for="codeLanguage1">예비 4(VARCHAR TYPE)</label>
+                                <input type="text" class="form-control" id="codeLanguageuse1" placeholder="">
                             </div>
                         </div>
                     </div>    
                     <div class="row" style="padding: 10px 5px;">
                         <div class="col-3">
                             <div class="form-group">
-                                <label for="exampleInputEmail1">예비 1(INT TYPE)</label>
-                                <input type="text" style="width: 100%; height: 1cm;" placeholder="">
+                                <label for="codeLanguage1">예비 1(INT TYPE)</label>
+                                <input type="text" class="form-control" id="codeLanguageuse1" placeholder="">
                             </div>
                         </div>
                         <div class="col-3">
                             <div class="form-group">
-                                <label for="exampleInputEmail1">예비 2(INT TYPE)</label>
-                                <input type="text" style="width: 100%; height: 1cm;" placeholder="">
+                                <label for="codeLanguage1">예비 2(INT TYPE)</label>
+                                <input type="text" class="form-control" id="codeLanguageuse1" placeholder="">
                             </div>
                         </div>
                         <div class="col-3">
                             <div class="form-group">
-                                <label for="exampleInputEmail1">예비 3(INT TYPE)</label>
-                                <input type="text" style="width: 100%; height: 1cm;" placeholder="">
+                                <label for="codeLanguage1">예비 3(INT TYPE)</label>
+                                <input type="text" class="form-control" id="codeLanguageuse1" placeholder="">
                             </div>
                         </div>
                         <div class="col-3">
                             <div class="form-group">
-                                <label for="exampleInputEmail1">예비 4(INT TYPE)</label>
-                                <input type="text" style="width: 100%; height: 1cm;" placeholder="">
+                                <label for="codeLanguage1">예비 4(INT TYPE)</label>
+                                <input type="text" class="form-control" id="codeLanguageuse1" placeholder="">
                             </div>
                         </div>
                     </div>
 
                     <div class="row">
                         <div class="col">
-                            <img src="./images/form-info1.png" class="rounded float-start" alt="...">
-                            <img src="./images/form_info2.PNG" class="rounded float-end" alt="...">
+
+                            <!-- <img src="./images/form-info1.png" class="rounded float-start" alt="...">
+                            <img src="./images/form_info2.PNG" class="rounded float-end" alt="..."> -->
                         </div>
                     </div>
                     
